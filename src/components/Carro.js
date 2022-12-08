@@ -1,5 +1,5 @@
 import { Component } from "react";
-import BubbleAlert  from "./BubbleAlert";
+import BubbleAlert from "./BubbleAlert";
 
 const styles = {
   carro: {
@@ -11,9 +11,9 @@ const styles = {
     cursor: "pointer",
   },
   bubble: {
-    position:'relative',
-    left:12,
-    top:20,
+    position: "relative",
+    left: 12,
+    top: 20,
   },
 };
 class Carro extends Component {
@@ -21,7 +21,7 @@ class Carro extends Component {
     return (
       <div>
         <span style={styles.bubble}>
-          <BubbleAlert />
+          <BubbleAlert value={10} />
         </span>
         <button style={styles.carro}>Carro</button>
       </div>
